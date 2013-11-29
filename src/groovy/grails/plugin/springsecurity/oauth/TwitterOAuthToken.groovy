@@ -22,22 +22,30 @@ import org.scribe.model.Token
  * Spring Security authentication token for Twitter users. It's a standard {@link OAuthToken}
  * that returns the Twitter name as the principal.
  *
- * @author Mihai CAZACU(cazacugmihai@gmail.com)
+ * @author <a href='mailto:cazacugmihai@gmail.com'>Mihai Cazacu</a>
+ * @author <a href='mailto:enrico@comiti.name'>Enrico Comiti</a>
+ * @author Thierry Nicola
  */
 class TwitterOAuthToken extends OAuthToken {
 
     public static final String PROVIDER_NAME = "twitter"
 
     String profileId
+    String screenName
 
-    TwitterOAuthToken(Token accessToken, String profileId) {
+    TwitterOAuthToken(Token accessToken, String profileId, String screenName) {
         super(accessToken)
         this.profileId = profileId
         this.principal = profileId
+        this.screenName = screenName
     }
 
     String getSocialId() {
         return profileId
+    }
+
+    String getScreenName() {
+        return screenName
     }
 
     String getProviderName() {

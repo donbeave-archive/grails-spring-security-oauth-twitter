@@ -19,7 +19,9 @@ import org.scribe.model.Token
 import grails.converters.JSON
 
 /**
- * @author Mihai CAZACU(cazacugmihai@gmail.com)
+ * @author <a href='mailto:cazacugmihai@gmail.com'>Mihai Cazacu</a>
+ * @author <a href='mailto:enrico@comiti.name'>Enrico Comiti</a>
+ * @author Thierry Nicola
  */
 class TwitterSpringSecurityOAuthService {
 
@@ -41,7 +43,8 @@ class TwitterSpringSecurityOAuthService {
             throw new OAuthLoginException("No user id from Twitter")
         }
         String profileId = "${user.id}"
-        return new TwitterOAuthToken(accessToken, profileId)
+        String screenName = "${user.screen_name}"
+        return new TwitterOAuthToken(accessToken, profileId, screenName)
     }
 
 }
