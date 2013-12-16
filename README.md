@@ -1,4 +1,4 @@
-grails-spring-security-oauth-twitter
+grails-spring-security-oauth-twitter [![Build Status](https://api.travis-ci.org/donbeave/grails-spring-security-oauth-twitter.png?branch=master)](https://travis-ci.org/donbeave/grails-spring-security-oauth-twitter)
 ====================================
 
 Twitter extension for [Grails Spring Security OAuth][spring-security-oauth-plugin] plugin
