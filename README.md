@@ -27,12 +27,12 @@ oauth {
   providers {
     …
     twitter {
-      api = org.scribe.builder.api.FacebookApi
-      key = 'oauth_facebook_key'
-      secret = 'oauth_facebook_secret'
-      successUri = '/oauth/facebook/success'
-      failureUri = '/oauth/facebook/error'
-      callback = "${baseURL}/oauth/facebook/callback"
+      api = org.scribe.builder.api.TwitterApi
+      key = 'oauth_twitter_key'
+      secret = 'oauth_twitter_secret'
+      successUri = '/oauth/twitter/success'
+      failureUri = '/oauth/twitter/error'
+      callback = "${baseURL}/oauth/twitter/callback"
     }
     …
   }
