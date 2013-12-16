@@ -1,7 +1,7 @@
 grails-spring-security-oauth-twitter
 ====================================
 
-Twitter extension for [Grails Spring Security OAuth][spring-security-oauth] plugin
+Twitter extension for [Grails Spring Security OAuth][spring-security-oauth-plugin] plugin
 
 Installation
 ------------
@@ -47,3 +47,5 @@ Logged with twitter?
 <s2o:ifLoggedInWith provider="twitter">yes</s2o:ifLoggedInWith>
 <s2o:ifNotLoggedInWith provider="twitter">no</s2o:ifNotLoggedInWith>
 ```
+
+[spring-security-oauth-plugin]: https://github.com/enr/grails-spring-security-oauth
