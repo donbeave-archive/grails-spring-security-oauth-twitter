@@ -25,7 +25,16 @@ log4j = {
 environments {
   test {
     oauth {
-      providers {}
+      providers {
+        twitter {
+            api = org.scribe.builder.api.TwitterApi
+            key = 'oauth_twitter_key'
+            secret = 'oauth_twitter_secret'
+            successUri = '/oauth/twitter/success'
+            failureUri = '/oauth/twitter/failure'
+            callback = "${baseURL}/oauth/twitter/callback"
+        }
+      }
     }
   }
 }
