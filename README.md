@@ -27,7 +27,10 @@ oauth {
   providers {
     // ...
     twitter {
-      api = org.scribe.builder.api.TwitterApi
+      // for spring-security-oauth version 2.0.2
+      api = org.scribe.builder.api.TwitterApi.SSL
+      // for spring-security-oauth version 2.1.0 and above
+      // api = org.scribe.builder.api.TwitterApi
       key = 'oauth_twitter_key'
       secret = 'oauth_twitter_secret'
       successUri = '/oauth/twitter/success'
