@@ -51,4 +51,10 @@ Logged with twitter?
 <s2o:ifNotLoggedInWith provider="twitter">no</s2o:ifNotLoggedInWith>
 ```
 
+Copyright and license
+---------------------
+
+Copyright 2012-2014 Mihai Cazacu, Enrico Comiti and Alexey Zhokhov under the [Apache License, Version 2.0](LICENSE). Supported by [Polusharie][polusharie].
+
 [spring-security-oauth-plugin]: https://github.com/enr/grails-spring-security-oauth
+[polusharie]: http://www.polusharie.com
