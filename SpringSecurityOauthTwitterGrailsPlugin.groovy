@@ -46,6 +46,7 @@ Integrate [Twitter|http://www.twitter.com] to [Spring Security OAuth plugin|http
             [name: 'Mihai Cazacu', email: 'cazacugmihai@gmail.com'],
             [name: 'Enrico Comiti', email: 'enrico@comiti.name'],
             [name: 'Alexey Zhokhov', email: 'donbeave@gmail.com']]
+    def organization = [name: 'Polusharie', url: 'http://www.polusharie.com']
 
     def issueManagement = [system: 'GITHUB',
                            url   : 'https://github.com/donbeave/grails-spring-security-oauth-twitter/issues']
